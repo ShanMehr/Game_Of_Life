@@ -26,7 +26,7 @@ def print_grid(grid, grid_size):
         for col_index in range(grid_size):
             print(
                 "*" if grid[row_index][col_index] == 1 else ".",
-                end=" ",
+                end=" "
             )
         print()
     return grid
@@ -94,8 +94,8 @@ def main():
     # we want to start with a 10x10 grid
     grid_size = 100
     grid = [[0] * grid_size for y in range(grid_size)]
-    # grid = create_glider_pattern(grid, grid_size)
-    grid = initialize_grid(grid,grid_size)
+    grid = create_glider_pattern(grid, grid_size)
+    # grid = initialize_grid(grid,grid_size)
 
     iteration = 0
     for iteration in range(game_iterations):
